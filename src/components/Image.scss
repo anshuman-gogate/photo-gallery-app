@@ -1,0 +1,42 @@
+.grid-image-container{
+    position: relative;
+    z-index: 10;
+
+    img.grid-image{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    .heart{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .filled-heart{
+        color: red;
+    }
+
+    .cart{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        font-size: 1.5rem;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.wide{
+    grid-column: span 2;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
